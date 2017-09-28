@@ -9,7 +9,7 @@ import com.genericrest.dao.CategoriaDAO;
 import com.genericrest.dao.GenericDAO;
 import com.genericrest.model.Categoria;
 import java.util.List;
-import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.context.ApplicationScoped;  
 import javax.persistence.Query;
 import org.hibernate.NonUniqueResultException;
 import org.slf4j.Logger;

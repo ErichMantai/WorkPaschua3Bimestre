@@ -27,13 +27,13 @@ public class ProdutoDAOImp extends GenericDAO<Produto, Long> implements ProdutoD
 
     private static final Logger LOG = LoggerFactory.getLogger(ProdutoDAOImp.class);
 
-    public ProdutoDAOImp(Class<Produto> entityClass) {
-        super(entityClass);
+    public ProdutoDAOImp() {
+        super(Produto.class);
     }
 
     @Override
     public Logger getLogger() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return LOG;
     }
 
 

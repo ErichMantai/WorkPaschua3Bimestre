@@ -10,13 +10,11 @@ import com.genericrest.dao.DAO;
 import com.genericrest.model.Categoria;
 import com.genericrest.service.CategoriaService;
 import com.genericrest.service.GenericCRUDRestService;
-import static java.util.Collections.list;
 import java.util.List;
 import javax.annotation.ManagedBean;
 import javax.inject.Inject;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.GenericEntity;
-import javax.ws.rs.core.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,14 +24,14 @@ import org.slf4j.LoggerFactory;
  */
 @ManagedBean
 @Path("/categoria")
-public class CategoriaRestService extends GenericCRUDRestService<Categoria> implements CategoriaService {
+class CategoriaRestService extends GenericCRUDRestService<Categoria> implements CategoriaService {
 
     private static final Logger LOG = LoggerFactory.getLogger(CategoriaRestService.class);
     @Inject
     private CategoriaDAO CategoriaDAO;
 
     
-    public CategoriaRestService(Class<Categoria> entityClass) {
+    public CategoriaRestService() {
         super(Categoria.class);
     }
 

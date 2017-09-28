@@ -23,12 +23,12 @@ com/genericrest/service/impl/ItemPedidoRestService$1.class
 com/genericrest/dao/impl/PedidoDAOImpl.class
 com/genericrest/service/impl/ProdutoRestService$1.class
 com/genericrest/dao/impl/ItemPedidoDaoImpl.class
+com/genericrest/listener/TomcatSupportListener.class
 com/genericrest/dao/impl/ClienteDAOImpl.class
 com/genericrest/service/GenericCRUDRestService.class
 com/genericrest/dao/GenericDAO.class
 com/genericrest/model/Pedido.class
 com/genericrest/dao/ClienteDAO.class
-com/learnrest/listener/TomcatSupportListener.class
 com/genericrest/service/ItemPedidoService.class
 com/genericrest/service/impl/CategoriaRestService$1.class
 com/genericrest/service/impl/CategoriaRestService.class

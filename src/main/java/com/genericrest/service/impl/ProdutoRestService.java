@@ -13,7 +13,7 @@ import com.genericrest.service.ProdutoService;
 import java.util.List;
 import javax.annotation.ManagedBean;
 import javax.inject.Inject;
-import javax.ws.rs.Path;
+import javax.ws.rs.Path;    
 import javax.ws.rs.core.GenericEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,14 +24,14 @@ import org.slf4j.LoggerFactory;
  */
 @ManagedBean
 @Path("/produto")
-public class ProdutoRestService extends GenericCRUDRestService<Produto> implements ProdutoService {
+ class ProdutoRestService extends GenericCRUDRestService<Produto> implements ProdutoService {
     
     private static final Logger LOG = LoggerFactory.getLogger(ProdutoRestService.class);
     
     @Inject
     private ProdutoDAO ProdutoDAO;
 
-    public ProdutoRestService(Class<Produto> entityClass) {
+    public ProdutoRestService() {
         super(Produto.class);
     }
 

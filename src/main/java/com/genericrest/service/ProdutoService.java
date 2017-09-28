@@ -5,10 +5,12 @@
  */
 package com.genericrest.service;
 
+import com.genericrest.model.Produto;
+
 /**
  *
  * @author erichmantai
  */
-public interface ProdutoService {
+public interface ProdutoService extends CRUDRestService<Produto> {
     
 }

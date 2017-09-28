@@ -23,8 +23,8 @@ public class PedidoDAOImpl extends GenericDAO<Pedido, Long> implements PedidoDAO
 
     private static final Logger LOG = LoggerFactory.getLogger(PedidoDAOImpl.class);
 
-    public PedidoDAOImpl(Class<Pedido> entityClass) {
-        super(entityClass);
+    public PedidoDAOImpl() {
+        super(Pedido.class);
     }
 
 

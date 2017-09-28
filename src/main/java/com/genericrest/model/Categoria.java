@@ -7,7 +7,6 @@ package com.genericrest.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.NamedQueries;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -19,6 +18,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table
 @XmlRootElement
 public class Categoria extends AbstractEntity {
+    
   @Column(length = 200, nullable = false)
   private String descricao;
   

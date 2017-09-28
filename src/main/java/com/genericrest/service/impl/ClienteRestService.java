@@ -25,14 +25,14 @@ import org.slf4j.LoggerFactory;
  */
 @ManagedBean
 @Path("/cliente")
-public class ClienteRestService extends GenericCRUDRestService<Cliente> implements ClienteService {
+ class ClienteRestService extends GenericCRUDRestService<Cliente> implements ClienteService {
 
     private static final Logger LOG = LoggerFactory.getLogger(ClienteRestService.class);
 
     @Inject
     private ClienteDAO ClienteDAO;
 
-    public ClienteRestService(Class<Cliente> entityClass) {
+    public ClienteRestService() {
         super(Cliente.class);
     }
 

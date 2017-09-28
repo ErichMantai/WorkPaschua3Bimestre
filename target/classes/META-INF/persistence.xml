@@ -2,7 +2,17 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="genericrestPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+<class>com.genericrest.model.Categoria</class>    
+<class>com.genericrest.model.Cliente</class>    
+<class>com.genericrest.model.Department</class>    
+<class>com.genericrest.model.ItemPedido</class>    
+<class>com.genericrest.model.Job</class>    
+<class>com.genericrest.model.JobHistory</class>    
+<class>com.genericrest.model.Location</class>    
+<class>com.genericrest.model.Pedido</class>    
+<class>com.genericrest.model.Person</class>    
+<class>com.genericrest.model.Produto</class>        
+<exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/genericrest"/>
       <property name="javax.persistence.jdbc.user" value="root"/>

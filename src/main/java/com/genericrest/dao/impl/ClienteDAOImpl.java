@@ -26,8 +26,8 @@ public class ClienteDAOImpl extends GenericDAO<Cliente, Long> implements Cliente
 
     private static final Logger LOG = LoggerFactory.getLogger(ClienteDAOImpl.class);
 
-    public ClienteDAOImpl(Class<Cliente> entityClass) {
-        super(entityClass);
+    public ClienteDAOImpl() {
+        super(Cliente.class);
     }
 
     @Override

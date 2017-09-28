@@ -25,14 +25,14 @@ import org.slf4j.LoggerFactory;
  */
 @ManagedBean
 @Path("/items")
-public class ItemPedidoRestService extends GenericCRUDRestService<ItemPedido> implements ItemPedidoService {
+ class ItemPedidoRestService extends GenericCRUDRestService<ItemPedido> implements ItemPedidoService {
 
     private static final Logger LOG = LoggerFactory.getLogger(ItemPedidoRestService.class);
 
     @Inject
     private ItemPedidoDAO ItemDAO;
 
-    public ItemPedidoRestService(Class<ItemPedido> entityClass) {
+    public ItemPedidoRestService() {
         super(ItemPedido.class);
     }
 
